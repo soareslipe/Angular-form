@@ -1,0 +1,10 @@
+<label for="input-files" class="input-files-box">Selecione um arquivo</label>
+<input id="input-files" type="file" (change)="onFileChange($event)" multiple>
+
+
+<ul>
+  <li *ngFor="let file of files">
+    {{ file.name }}
+  </li>
+</ul>
+

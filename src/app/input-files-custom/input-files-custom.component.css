@@ -1,0 +1,22 @@
+input[type="file"] {
+    display: none;
+}
+
+.input-files-box {
+    display: flex;
+    background-color: rgba(240, 248, 255, 0.678);
+    height: 100px;
+    width: 300px;
+    border: 5px dashed rgba(255, 0, 0, 0.425);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.input-files-box:hover{
+    background-color: rgba(255, 255, 255, 0.836);
+    border: 5px dashed rgba(255, 7, 7, 0.678);
+}

@@ -1,0 +1,11 @@
+<form [formGroup]="formData">
+  <mat-form-field>
+    <mat-label>Primeiro Nome</mat-label>
+    <input matInput formControlName="firstName">
+  </mat-form-field>
+  <p>{{formData.get('firstName')?.value}}</p>
+
+  <app-input-files-custom (filesChanged)="onFilesChanged($event)"></app-input-files-custom>
+
+  <button (click)="showConsole()">Mostrar Console</button>
+</form>
