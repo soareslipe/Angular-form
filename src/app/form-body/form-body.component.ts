@@ -19,6 +19,10 @@ export class FormBodyComponent {
     this.formData = this.formBuilder.group({
       firstName: [''],
       lastName: [''],
+      street: [''],
+      city: [''],
+      state: [''],
+      zip: [''],
       fileForm: this.formBuilder.array([])
     });
   }
