@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -17,12 +17,12 @@ export class FormBodyComponent {
 
   constructor(private formBuilder: FormBuilder) {
     this.formData = this.formBuilder.group({
-      firstName: [''],
-      lastName: [''],
-      street: [''],
-      city: [''],
-      state: [''],
-      zip: [''],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      street: ['', Validators.required],
+      city: ['', Validators.required],
+      state: ['', Validators.required],
+      zip: ['', Validators.required],
       fileForm: this.formBuilder.array([])
     });
   }
